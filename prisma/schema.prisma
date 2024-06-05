@@ -1,0 +1,66 @@
+// generator client {
+//   provider = "prisma-client-js"
+// }
+
+// datasource db {
+//   provider = "postgresql"
+//   url      = env("DATABASE_URL")
+// }
+
+// model Pessoa {
+//   id String @id @default(uuid())
+//   nome  String
+//   cargo_concorrido  String
+//   descricaoDeSi  String
+//   creat_at DateTime @default(now())
+
+//   @@map("pessoa")
+// }
+
+// model Contatos {
+//   email String @id @unique
+//   telefone Int
+//   linkedIn String
+//   github String
+//   creat_at DateTime @default(now())
+
+//   @@map("contatos")
+// }
+
+// model Educacao {
+//   id String @id @default(uuid())
+//   modalidade String
+//   curso String?
+//   instituicao String 
+//   cursando_ou_concluido String
+//   periodo_de_conclusao DateTime
+//   creat_at DateTime @default(now())
+
+//   @@map("educacao")
+// }
+
+// model ExperienciaProfissional {
+//   id String @id @default(uuid())
+//   cargo String
+//   empresa String
+//   periodo_de_tempo DateTime
+//   creat_at DateTime @default(now())
+
+//   @@map("experiencias")
+// }
+
+// model HabilidadesHumanas {
+//   id String @id @default(uuid())
+//   nome String
+//   creat_at DateTime @default(now())
+
+//   @@map("softs")
+// }
+
+// model HabilidadesProfissionais {
+//   id String @id @default(uuid())
+//   nome String
+//   creat_at DateTime @default(now())
+
+//   @@map("hards")
+// }
