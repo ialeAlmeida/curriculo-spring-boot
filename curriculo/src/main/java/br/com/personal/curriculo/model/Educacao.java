@@ -1,5 +1,8 @@
 package br.com.personal.curriculo.model;
 
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,6 +12,9 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Educacao {
     
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String nomeCurso;
     private String tipoEducacao;
     private String instituicao;
