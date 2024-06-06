@@ -12,6 +12,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
+@Entity
+@Table(name="experiencias")
 public class Experiencia {
     
     @Id

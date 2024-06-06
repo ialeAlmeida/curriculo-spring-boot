@@ -10,6 +10,9 @@ import lombok.Setter;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@Entity
+@Table(name="objetivos")
 public class Objetivo {
     
     @Id
