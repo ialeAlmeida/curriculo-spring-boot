@@ -1,4 +1,4 @@
-package br.com.personal.curriculo;
+package br.com.pessoal.curriculo_spring_boot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
