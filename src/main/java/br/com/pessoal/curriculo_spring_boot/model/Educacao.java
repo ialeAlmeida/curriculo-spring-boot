@@ -1,4 +1,4 @@
-package br.com.personal.curriculo.model;
+package br.com.pessoal.curriculo_spring_boot.model;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,8 +12,6 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-@Entity
-@Table(name="educacoes")
 public class Educacao {
     
     @Id

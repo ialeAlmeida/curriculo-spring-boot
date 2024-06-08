@@ -1,4 +1,4 @@
-package br.com.personal.curriculo.model;
+package br.com.pessoal.curriculo_spring_boot.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,8 +13,6 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Entity
-@Table(name="pessoas")
 public class Pessoa {
 
     @Id
@@ -56,10 +54,6 @@ public class Pessoa {
         this.cidadeEstado = cidadeEstado;
         this.email = email;
         this.gitHub = gitHub;
-        this.educacoes = ArrayList<Educacao> educacoes;
-        this.experiencias = ArrayList<Experiencia> experiencias;
-        this.habilidades = ArrayList<Habilidade> habilidades;
-        this.objetivos = ArrayList<Objetivo> objetivos;
     }
     
 }
